@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+/* When scrolled */
+nav.scrolled {
+    background: #222;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Menu Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.section:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.section:nth-child(even) {
+    background: #ddd;
+}
+
+.section {
+    height: 100vh;
+    padding-top: 80px;
+}
