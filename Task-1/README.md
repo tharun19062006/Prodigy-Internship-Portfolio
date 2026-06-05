@@ -1,1 +1,2 @@
-It is simple responsive web page about Prodigy InfoTech.This is developed using HTMl,CSS,and JavaScript
+# Task-1: Responsive Landing Page
+Developed a responsive landing page focused on clean layout and cross-device compatibility using HTML5 and CSS3.
