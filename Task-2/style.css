@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+#display {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#start {
+    background-color: #4cc9f0;
+}
+
+#pause {
+    background-color: #f72585;
+}
+
+#reset {
+    background-color: #7209b7;
+}
+
+#lap {
+    background-color: #3a0ca3;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+}
